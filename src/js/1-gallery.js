@@ -80,11 +80,7 @@ const markup = images
 gallery.insertAdjacentHTML('beforeend', markup);
 
 const options = {
-  captions: true,
-  captionSelector: 'img',
-  captionType: 'attr',
   captionsData: 'alt',
-  captionPosition: 'bottom',
   captionDelay: 250,
 };
 const imageModal = new SimpleLightbox('.gallery a', options);

@@ -19,7 +19,8 @@ form.addEventListener('input', event => {
   localStorage.setItem(localStorageKey, JSON.stringify(feedbackFormState));
 });
 
-if (localStorage.length !== 0) {
+const savedState = localStorage.getItem(localStorageKey);
+if (savedState !== null) {
   const parsedfeedbackFormState = JSON.parse(
     localStorage.getItem(localStorageKey)
   );
@@ -31,7 +32,7 @@ form.addEventListener('submit', event => {
   event.preventDefault();
   if (form.elements.email.value !== '' && form.elements.message.value !== '') {
     console.log(feedbackFormState);
-    localStorage.clear();
+    localStorage.removeItem(localStorageKey);
     form.reset();
   } else {
     alert('Fields cannot be empty!');
