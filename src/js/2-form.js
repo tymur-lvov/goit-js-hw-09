@@ -9,6 +9,10 @@ form.innerHTML =
 const localStorageKey = 'feedback-form-state';
 let feedbackFormState = {};
 
+if (localStorage.hasOwnProperty(localStorageKey)) {
+  feedbackFormState = JSON.parse(localStorage.getItem(localStorageKey));
+}
+
 form.addEventListener('input', event => {
   const emailInput = event.currentTarget.elements.email.value;
   const messageInput = event.currentTarget.elements.message.value;
