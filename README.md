@@ -43,15 +43,15 @@
 
 
 
-<li class="gallery-item">
-	<a class="gallery-link" href="large-image.jpg">
-		<img 
+li class="gallery-item"
+	a class="gallery-link" href="large-image.jpg"
+		img 
 			class="gallery-image" 
 			src="small-image.jpg" 
 			alt="Image description" 
-			/>
-	</a>
-</li>
+			/
+	/a
+/li
 
 
 
@@ -98,17 +98,17 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 
 
-<form class="feedback-form" autocomplete="off">
-  <label>
+form class="feedback-form" autocomplete="off"
+  label
     Email
-    <input type="email" name="email" autofocus />
-  </label>
-  <label>
+    input type="email" name="email" autofocus /
+  /label
+  label
     Message
-    <textarea name="message" rows="8"></textarea>
-  </label>
-  <button type="submit">Submit</button>
-</form>
+    textarea name="message" rows="8"/textarea
+  /label
+  button type="submit"Submit/button
+/form
 
 
 
